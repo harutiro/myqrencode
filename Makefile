@@ -1,7 +1,5 @@
-DEST = /usr/local/bin
+CC=gcc
+CFLAGS=-O
 
 myqrencode: myqrencode.c
-	gcc -o myqrencode myqrencode.c qrcodegen.c
-
-install: myqrencode
-	install -s myqrencode $(DEST)
+	$(CC) $(CFLAGS) -o myqrencode myqrencode.c qrcodegen.c -lncurses
