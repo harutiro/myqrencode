@@ -1,2 +1,2 @@
 myqrencode: myqrencode.c
-	gcc myqrencode.c qrcodegen.c -o demo
+	gcc -o myqrencode myqrencode.c qrcodegen.c

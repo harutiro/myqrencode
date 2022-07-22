@@ -1,3 +1,3 @@
 ```
-rm -f demo && make myqrencode && ./demo
+rm -f myqrencode && make myqrencode && ./myqrencode
 ```
