@@ -7,13 +7,13 @@
 
 //文字を設置する関数
 void putWhite(){
-    printf("\x1b[47m");     /* 背景色を灰色に */
+    printf("\x1b[47m");     /* 背景色を白色に */
     printf("　");
     printf("\x1b[49m");     /* 背景色をデフォルトに戻す */
 }
 
 void putBlack(){
-    printf("\x1b[40m");     /* 背景色を灰色に */
+    printf("\x1b[40m");     /* 背景色を黒色に */
     printf("　");
     printf("\x1b[49m");     /* 背景色をデフォルトに戻す */
 }
@@ -103,13 +103,15 @@ int main()
 
     for (int y = 0; y < size; y++){
 
+        //右端の白の部分を表示する
         for(int x = 0; x < 3; x++){
             putWhite();
         }
 
+        //実際の表示部分
         for (int x = 0; x < size; x++)
         {
-
+            //真ん中のクリ抜き作業部分
 			if((size/3 < x && x < size*2/3)&&(size/2-3 < y && y < size/2+3)){
 
 				if(y == size/2 && size/3+1 == x){
@@ -133,7 +135,8 @@ int main()
                 }
 
 			}else{
-
+                
+                //QRコードの表示
                 if (qrcodegen_getModule(qr0, x, y)){
 					putBlack();
 				}else{
@@ -142,6 +145,7 @@ int main()
 			}
         }
 
+        //左端の白の部分を表示する
         for(int x = 0; x < 3; x++){
             putWhite();
         }
