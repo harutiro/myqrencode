@@ -55,7 +55,7 @@ brewを用いて各PCにインストールができるようになっていま�
 
 ## 作成した資料一覧について
 HomeBrewのリリース方法をまとめた記事
-https://zenn.dev/articles/bf66acd8fabf63/edit
+https://zenn.dev/harutiro/articles/bf66acd8fabf63
 
 QRエンコーダーの使い方をまとめた記事
 https://qiita.com/harutiro/items/025353cec772a3c47388
